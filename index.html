@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>IndiaDataCenter</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+   
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+           
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-server me-3"></i>IndiaDataCenter</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                      
+                        <div class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dedicated Servers</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="noida.html" class="dropdown-item"> Dedicated Servers Noida</a>
+                                <a href="mumbai.html" class="dropdown-item"> Dedicated Servers Mumbai</a>   
+                                <a href="bangalore.html" class="dropdown-item">Dedicated Servers Banglore</a>
+                            </div>
+                        </div>
+                        <a href="#" class="nav-item nav-link">Services</a>
+                            
+                            <!-- <div class="dropdown-menu m-0">
+                                <a href="team.html" class="dropdown-item">Mumbai</a>
+                                <a href="testimonial.html" class="dropdown-item">Noida</a>
+                                <a href="comparison.html" class="dropdown-item">Banglore</a>
+                            </div> -->
+                        </div>
+                        
+                        
+                      
+                    </div>
+                   
+                    <a href="contact.html" class="btn btn-secondary py-2 px-4 ms-3">Contact</a>
+                    <a href="index.html" class="btn btn-secondary py-2 px-4 ms-3">Home</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5  hero-header mb-5">
+                
+                <div class="container my-5 py-5 px-lg-5">
+                 
+                    <div class="row g-5">
+                        <div class="col-lg-6 pt-5 text-center text-lg-start">
+                            <h1 class=" text-white mb-4 animated slideInLeft">Empowering Businesses with Cloud Innovation</h1>
+                            <p class="text-white animated slideInLeft">Focuses on how your cloud services drive innovation and growth.</p>
+                            
+                            <a href="contact.html" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Get Started Now</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid animated zoomIn" src="img/world map (1).svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+
+        <!-- Domain Search Start -->
+        <!-- <div class="container-xxl domain mb-5" style="margin-top: 90px;">
+            <div class="container px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section-title position-relative text-center mx-auto mb-4 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                            <h1 class="mb-3">Search Your Domain</h1>
+                            <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
+                        </div>
+                        <div class="position-relative w-100 my-3 wow fadeInUp" data-wow-delay="0.3s">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your domain name">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Search</button>
+                        </div>
+                        <div class="row g-3 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">.com</h5>
+                                <p class="mb-0">$9.99/year</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">.net</h5>
+                                <p class="mb-0">$9.99/year</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">.org</h5>
+                                <p class="mb-0">$9.99/year</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">.us</h5>
+                                <p class="mb-0">$9.99/year</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">.eu</h5>
+                                <p class="mb-0">$9.99/year</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">.co.uk</h5>
+                                <p class="mb-0">$9.99/year</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Domain Search End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-4">
+                            <h1 class="mb-2">Welcome to Bharat Center</h1>
+                        </div>
+                        <p class="mb-4">Emphasizes the role of the center as a place for development and forward-thinking initiatives
+                            Suggests the center as a place for opportunities and advancement.
+                        </p>
+                        <div class="row g-3">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">3</h2>
+                                    <p class="mb-0">Data Center</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-users fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">100</h2>
+                                    <p class="mb-0">Clients</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-check fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">400</h2>
+                                    <p class="mb-0">Projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/cloud.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+<!-- slect location -->
+
+<div class="container-xxl py-5">
+    <div class="container px-lg-5">
+        <div class="section-title position-relative mb-4 pb-4 text-center">
+            <h1 class="mb-2">Select Data Center</h1>
+        </div>
+        <div class="main-section">
+        <div class="card" style="width: 18rem;">
+            <img src="img/mumbai.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Server in Mumbai</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+          
+          <div class="card" style="width: 18rem;">
+            <img src="img/noida.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Server in Noida</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+             
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/bangalore.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Server in Bangalore</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+ <!-- end -->
+      
+
+
+        <!-- Comparison Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Shared VS Dedicated Server</h1>
+                    <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos
+                        ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
+                </div>
+                <div class="row g-5 comparison position-relative">
+                    <div class="col-lg-6 pe-lg-5">
+                        <div class="section-title position-relative mx-auto mb-4 pb-4">
+                            <h3 class="fw-bold mb-0">Shared Server</h3>
+                        </div>
+                        <div class="row gy-3 gx-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <i class="fa fa-server fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">99.99% Uptime</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">100% Secured</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <i class="fa fa-cog fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">Control Panel</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <i class="fa fa-headset fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">24/7 Support</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <div class="section-title position-relative mx-auto mb-4 pb-4">
+                            <h3 class="fw-bold mb-0">Dedicated Server</h3>
+                        </div>
+                        <div class="row gy-3 gx-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <i class="fa fa-server fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">99.99% Uptime</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa fa-shield-alt fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">100% Secured</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <i class="fa fa-cog fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">Control Panel</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <i class="fa fa-headset fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">24/7 Support</h5>
+                                <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Comparison Start -->
+
+
+     
+
+<!-- data  center services -->
+    
+<div class="container-xxl py-5">
+    <div class="container px-lg-5">
+        <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3"> Bharat Data Center Services</h1>
+           
+        </div>
+
+        <div class="row gy-5 gx-4">
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+
+                <div class="dc-services-grid">
+                    <div class="dc-service-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                       <img src="img/servicesthree.svg"> 
+                      <div class="dc-service-text">
+                        <h3 class="dc-service-name">Interconnection Services</h3>
+                        <p class="dc-service-description">
+                            our Interconnection Services are designed to ensure seamless, secure, and efficient 
+                            connectivity across your network infrastructure.
+                        </p>
+                        <a href="" class="dc-service-link">Learn More →</a>
+                      </div>
+                    </div>
+            
+                    <div class="dc-service-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                     <img src="img/serivcestwo.svg">
+                      <div class="dc-service-text">
+                        <h3 class="dc-service-name">Dedicated Servers</h3>
+                        <p class="dc-service-description">
+                            Dedicated Server Solutions that provide unmatched performance, security, and control for businesses with demanding workloads. Our dedicated servers are fully customizable.
+                        </p>
+                        <a href="" class="dc-service-link">Learn More →</a>
+                      </div>
+                    </div>
+                 </div>
+
+                 </div>
+                 <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="dc-services-grid">
+                    <div class="dc-service-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                        <img src="img/serivces.svg"> 
+                      <div class="dc-service-text">
+                        <h3 class="dc-service-name">Cloud Solutions</h3>
+                        <p class="dc-service-description">
+                            Cloud Solutions are designed to help businesses of all sizes embrace the power of the cloud. We offer scalable, secure, and cost-effective cloud services tailored.  
+                            
+                        </p>
+                        <a href="" class="dc-service-link">Learn More →</a>
+                      </div>
+                    </div>
+            
+                    <div class="dc-service-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                        <img src="img/serviceone.svg">
+                      <div class="dc-service-text">
+                        <h3 class="dc-service-name">Colocation</h3>
+                        <p class="dc-service-description">
+                            Colocation Services provide a secure, reliable, and scalable solution for housing your IT infrastructure. By colocating with us, you can leverage our state-of-the-art data centers to ensure the safety and performance of your servers.
+                        </p>
+                        <a href="" class="dc-service-link">Learn More →</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+</div>
+</div>
+</div>
+        <!-- end -->
+
+
+<!-- tabs -->
+
+<div class="container-xxl  tab-section">
+    <div class="container px-lg-5 ">
+        <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Our Signature Features That Set Us Apart</h1>
+           
+        </div>
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pill-tab-0" data-bs-toggle="pill" href="#pill-tabpanel-0" role="tab" aria-controls="pill-tabpanel-0" aria-selected="true">Easy Deployment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pill-tab-1" data-bs-toggle="pill" href="#pill-tabpanel-1" role="tab" aria-controls="pill-tabpanel-1" aria-selected="false">Full Server Control</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pill-tab-2" data-bs-toggle="pill" href="#pill-tabpanel-2" role="tab" aria-controls="pill-tabpanel-2" aria-selected="false">Multi Locations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pill-tab-3" data-bs-toggle="pill" href="#pill-tabpanel-3" role="tab" aria-controls="pill-tabpanel-3" aria-selected="false">Awesome Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pill-tab-4" data-bs-toggle="pill" href="#pill-tabpanel-4" role="tab" aria-controls="pill-tabpanel-4" aria-selected="false">DDoS Protection</a>
+              </li>
+          </ul>
+          <div class="tab-content py-3 mt-2">
+            <div class="tab-pane active tab-border" id="pill-tabpanel-0" role="tabpanel" aria-labelledby="pill-tab-0">
+                
+                <ul class="tab-list">
+                    <li>Use tools like Terraform, Ansible, or CloudFormation to manage and automate the provisioning of servers, networking, and other infrastructure resources in your data center.</li>
+                    <li>This makes deployment consistent, repeatable, and easy to scale or replicate across multiple environments (dev, staging, production).</li>
+                    <li>Dockerize your applications for easier deployment. This ensures that your application runs in the same environment on any server in the data center.</li>
+                    <li>With Docker, you can package your application and its dependencies in a container, simplifying the process of moving the app across environments or servers.</li>
+                    <li>Use Kubernetes (K8s) to manage and orchestrate containers. It automates deployment, scaling, and management of containerized applications.</li>
+                    <li>Kubernetes allows for seamless updates and rollbacks, service discovery, load balancing, and self-healing mechanisms for your applications.</li>
+                </ul>
+                
+                
+               
+            </div>
+            <div class="tab-pane tab-border" id="pill-tabpanel-1" role="tabpanel" aria-labelledby="pill-tab-1">
+                
+                <ul class="tab-list">
+                    <li>Use dedicated servers rather than shared or virtualized environments to gain full control over hardware resources. This provides full control over configurations, software installations, and networking.</li>
+                    <li>Set up your operating system (Linux distributions like Ubuntu Server or CentOS are common) to optimize for performance and security. This includes choosing kernel versions and custom modules.</li>
+                    <li>Ensure root (or superuser) access on all servers. This allows for installing any required packages, tweaking OS-level settings, and managing system services.</li>
+                    <li>Use sudoers file configuration to control access for team members, granting specific permissions while limiting access to sensitive settings.</li>
+                    <li>Implement intrusion detection systems (IDS) like Snort or Fail2ban for monitoring and mitigating unauthorized access attempts.</li>
+                    <li>Implement intrusion detection systems (IDS) like Snort or Fail2ban for monitoring and mitigating unauthorized access attempts.</li>
+                </ul>
+            </div>
+            <div class="tab-pane tab-border" id="pill-tabpanel-2" role="tabpanel" aria-labelledby="pill-tab-2">
+              
+                <ul class="tab-list">
+                    <li>Use multiple data center locations across regions, such as North America, Europe, and Asia, to ensure low-latency connections for users in different geographical areas.</li>
+                    <li>For each region, use local servers to process requests closer to end users, which can improve response times and reduce loading times.</li>
+                    <li>A CDN distributes static assets (images, scripts, videos) across multiple nodes globally. Services like Cloudflare, Akamai, or AWS CloudFront cache content at multiple edge locations, reducing the load on the main servers and improving load speeds for users worldwide.</li>
+                    <li>CDNs also provide additional DDoS protection and security features to ensure smooth content delivery.</li>
+                </ul>
+            </div>
+
+            <div class="tab-pane tab-border" id="pill-tabpanel-3" role="tabpanel" aria-labelledby="pill-tab-2">
+              
+                <ul class="tab-list">
+                    <li>24/7 support across multiple channels: live chat, email, phone, and social media.</li>
+                    <li>Ensure live chat is prominent on the website for real-time issue resolution, and consider a ticketing system for managing emails to keep track of issues, priorities, and client communications.</li>
+                    <li>Create a knowledge base with step-by-step guides, video tutorials, and FAQs on common issues (e.g., account setup, SSL installation, troubleshooting downtime).</li>
+                    <li>Make resources easy to navigate and accessible, allowing clients to resolve minor issues themselves, which can also reduce support ticket volume.</li>
+                </ul>
+            </div>
+
+            <div class="tab-pane tab-border" id="pill-tabpanel-4" role="tabpanel" aria-labelledby="pill-tab-2">
+              
+                <ul class="tab-list">
+                    <li>Implement Firewalls and Intrusion Prevention Systems (IPS): Use firewalls with DDoS protection capabilities, such as Cisco Firepower or Palo Alto Networks, which can detect and block malicious traffic at the network edge.</li>
+                    <li>Set up or leverage a scrubbing center (often provided by ISPs or security providers) that inspects and filters out DDoS traffic before it reaches your network.</li>
+                    <li>Use a CDN (like Cloudflare, Akamai, or AWS CloudFront) to cache content and absorb traffic, reducing the load on your origin servers.</li>
+                    <li>CDNs have DDoS protection built-in and can help distribute incoming traffic across multiple locations, making it harder for attackers to overwhelm a single point.</li>
+                </ul>
+            </div>
+          </div>
+          
+</div>
+
+</div>
+
+
+    <!-- Pricing Start -->
+    <div class="container-xxl py-5">
+        <div class="container px-lg-5">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="mb-3">Dedicated Server</h1>
+                <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="position-relative shadow rounded border-top border-5 border-primary">
+                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                            <i class="fa fa-share-alt text-white"></i>
+                        </div>
+                        <div class="text-center border-bottom p-4 pt-5">
+                            <h4 class="fw-bold">Dedicated Server</h4>
+                            <p class="mb-0">Eirmod erat dolor amet est clita lorem erat justo rebum elitr eos</p>
+                        </div>
+                        <div class="text-center border-bottom p-4">
+                            <p class="text-primary mb-1">Latest Offer - <strong>Save 30%</strong></p>
+                            <h1 class="mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">₹</small>14,999<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                            </h1>
+                            <a class="btn btn-primary px-4 py-2" href="">Buy Now</a>
+                        </div>
+                        <div class="p-4">
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Processor: Intel Xeon E5-2640V4</p>
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>CPU: 10 cores / 20 threads @ 2.60 GHz</p>
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>RAM: 128 GB DDR4</p>
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Storage: 2 x 480GB SSD</p>
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Bandwidth: 10TB / 1Gbps</p>
+                            <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>Delivery Time: Within 24 - 48 hours</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="position-relative shadow rounded border-top border-5 border-secondary">
+                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-secondary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                            <i class="fa fa-server text-white"></i>
+                        </div>
+                        <div class="text-center border-bottom p-4 pt-5">
+                            <h4 class="fw-bold">Dedicated Server</h4>
+                            <p class="mb-0">Eirmod erat dolor amet est clita lorem erat justo rebum elitr eos</p>
+                        </div>
+                        <div class="text-center border-bottom p-4">
+                            <p class="text-primary mb-1">Latest Offer - <strong>Save 30%</strong></p>
+                            <h1 class="mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">₹</small>22,499<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                            </h1>
+                            <a class="btn btn-secondary px-4 py-2" href="">Buy Now</a>
+                        </div>
+                        <div class="p-4">
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Processor: 2 x Intel Xeon E5-2640V4</p>
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>CPU: 20 cores / 40 threads @ 2.60 GHz</p>
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>RAM: 128 GB DDR4</p>
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Storage: 2 x 1.92TB SSD</p>
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Bandwidth: 10TB / 1Gbps</p>
+                            <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>Delivery Time: Within 24 - 48 hours</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="position-relative shadow rounded border-top border-5 border-primary">
+                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                            <i class="fa fa-cog text-white"></i>
+                        </div>
+                        <div class="text-center border-bottom p-4 pt-5">
+                            <h4 class="fw-bold">Dedicated Server</h4>
+                            <p class="mb-0">Eirmod erat dolor amet est clita lorem erat justo rebum elitr eos</p>
+                        </div>
+                        <div class="text-center border-bottom p-4">
+                            <p class="text-primary mb-1">Latest Offer - <strong>Save 30%</strong></p>
+                            <h1 class="mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">₹</small>20,250<small
+                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                            </h1>
+                            <a class="btn btn-primary px-4 py-2" href="">Buy Now</a>
+                        </div>
+                        <div class="p-4">
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Processor: Intel Xeon E5-2680 V4</p>
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>CPU: 14 cores / 28 threads @ 2.60 GHz</p>
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>RAM: 128 GB DDR4</p>
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Storage: 2 x 960GB SSD</p>
+                            <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Bandwidth: 10TB / 1Gbps</p>
+                            <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>Delivery Time: Within 24 - 48 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row gy-5 gx-4 pt-5">
+                    <div class="col-12">
+                        <h5 class="fw-bold text-white mb-4">Subscribe Our Newsletter</h5>
+                        <div class="position-relative" style="max-width: 400px;">
+                            <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h5 class="fw-bold text-white mb-4">About Us</h5>
+                                <a class="btn btn-link" href="mumbai.html">Data server</a>
+                                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                                <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
+                                <a class="btn btn-link" href="">Terms & Condition</a>
+                                <a class="btn btn-link" href="">Support</a>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="fw-bold text-white mb-4">Our Services</h5>
+                                <a class="btn btn-link" href="">CDN</a>
+                                <a class="btn btn-link" href="">Backup</a>
+                                <a class="btn btn-link" href="">VPS Hosting</a>
+                                <a class="btn btn-link" href="">Manage Support</a>
+                                <a class="btn btn-link" href="">Datacenter Consultancy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-lg-n5">
+                        <div class="bg-light rounded" style="padding: 30px;">
+                            <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Name">
+                            <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Email">
+                            <textarea class="form-control border-0 mb-2" rows="2" placeholder="Message"></textarea>
+                            <button class="btn btn-primary w-100 py-2">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Datacenter</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							<!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> -->
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
